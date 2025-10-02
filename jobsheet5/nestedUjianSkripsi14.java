@@ -10,12 +10,13 @@ public class nestedUjianSkripsi14 {
         System.out.print("Apakah mahasiswa sudah bebas kompen? (Ya/Tidak): ");
         String bebasKompen = sc.nextLine().trim();
 
-        System.out.print("\nMasukkan jumlah log bimbingan pembimbing 1: ");
-        int bimbinganP1 = sc.nextInt();
-        System.out.print("Masukkan jumlah log bimbingan pembimbing 2: ");
-        int bimbinganP2 = sc.nextInt();
-
         if (bebasKompen.equalsIgnoreCase("Ya")) {
+
+            System.out.print("\nMasukkan jumlah log bimbingan pembimbing 1: ");
+            int bimbinganP1 = sc.nextInt();
+            System.out.print("Masukkan jumlah log bimbingan pembimbing 2: ");
+            int bimbinganP2 = sc.nextInt();
+
             if (bimbinganP1 >= 8 && bimbinganP2 >= 4) {
                 pesan = "semua syarat terpenuhi. Mahasiswa boleh mendaftar ujian skirpsi";
             } else if (bimbinganP1 < 8 && bimbinganP2 < 4) {
